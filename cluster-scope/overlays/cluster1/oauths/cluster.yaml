@@ -10,6 +10,6 @@ spec:
       github:
         clientID: 2dd6eed6e8e0865369d3
         clientSecret:
-          name: github-oauth-secret
+          name: clientsecret-github
         teams:
           - CCI-MOC/ops

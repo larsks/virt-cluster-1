@@ -14,5 +14,5 @@ roleRef:
     name: moc-kubernetes-external-secrets
 subjects:
     - name: moc-kubernetes-external-secrets
-      namespace: "lars-sandbox"
+      namespace: external-secrets
       kind: ServiceAccount

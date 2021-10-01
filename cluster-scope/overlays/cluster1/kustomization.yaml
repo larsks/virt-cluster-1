@@ -8,3 +8,5 @@ resources:
   - ../../base/user.openshift.io/groups/cluster-admins
 
   - clusterversions
+  - externalsecrets
+  - oauths
