@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
   - ../../bundles/external-secrets
+  - ../../bundles/nmstate
   - ../../bundles/ocs
 
   - ../../base/rbac.authorization.k8s.io/clusterrolebindings/cluster-admins-rb

@@ -1,0 +1,59 @@
+[
+  {
+    "name": "rook-ceph-mon-endpoints",
+    "kind": "ConfigMap",
+    "data": {
+      "data": "ceph0=10.255.116.11:6789",
+      "maxMonId": "0",
+      "mapping": "{}"
+    }
+  },
+  {
+    "name": "rook-ceph-mon",
+    "kind": "Secret",
+    "data": {
+      "fsid": "6de96983-eef7-4690-9a6d-9124d3707a30",
+      "admin-secret": "admin-secret",
+      "mon-secret": "mon-secret"
+    }
+  },
+  {
+    "name": "rook-ceph-operator-creds",
+    "kind": "Secret",
+    "data": {
+      "userID": "client.healthchecker-moc-rbd-1",
+      "userKey": "AQAwtlVhG7VSLRAAgj59qggCz57nZsC/lApNsA=="
+    }
+  },
+  {
+    "name": "ceph-rbd",
+    "kind": "StorageClass",
+    "data": {
+      "pool": "moc_rbd_1"
+    }
+  },
+  {
+    "name": "monitoring-endpoint",
+    "kind": "CephCluster",
+    "data": {
+      "MonitoringEndpoint": "10.255.116.11",
+      "MonitoringPort": "9283"
+    }
+  },
+  {
+    "name": "rook-csi-rbd-node",
+    "kind": "Secret",
+    "data": {
+      "userID": "node-moc-rbd-1",
+      "userKey": "AQBFtlVhC7/9EhAAw8x39nGpMMlU4HpqN3iIjg=="
+    }
+  },
+  {
+    "name": "rook-csi-rbd-provisioner",
+    "kind": "Secret",
+    "data": {
+      "userID": "provisioner-moc-rbd-1",
+      "userKey": "AQB5Z1Nhym6JEBAARojfeVFlbPYofrT1VV11qw=="
+    }
+  }
+]
