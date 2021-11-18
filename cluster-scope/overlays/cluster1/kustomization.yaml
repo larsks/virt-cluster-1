@@ -12,3 +12,12 @@ resources:
   - clusterversions
   - externalsecrets
   - oauths
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+configMapGenerator:
+  - name: admin-acks
+    namespace: openshift-config
+    envs:
+      - config/admin-acks.env
